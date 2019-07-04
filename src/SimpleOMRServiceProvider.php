@@ -21,8 +21,8 @@ class SimpleOMRServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('simpleomr.php'),
-            ], 'config');
+                __DIR__.'/../config/config.php' => config_path('simple-omr.php'),
+            ], 'simple-omr_config');
 
             // Publishing the views.
             /*$this->publishes([
@@ -50,11 +50,15 @@ class SimpleOMRServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'simpleomr');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'simple-omr');
 
         // Register the main class to use with the facade
-        $this->app->singleton('simpleomr', function () {
-            return new SimpleOMR;
+        $this->app->singleton('simple-omr', function () {
+            return SimpleOMR::createFromConfig(config('simple-omr'));
+        });
+
+        $this->app->singleton(SimpleOMR::class, function ($app) {
+            return $app->make('simple-omr');
         });
     }
 }
