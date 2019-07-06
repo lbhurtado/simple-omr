@@ -2,8 +2,6 @@
 
 namespace LBHurtado\SimpleOMR;
 
-use Imagick;
-use ImagickDraw;
 use LBHurtado\SimpleOMR\Exceptions\JsonDecodeException;
 use LBHurtado\SimpleOMR\Exceptions\FileNotFoundException;
 use LBHurtado\SimpleOMR\Exceptions\InvalidToleranceException;
@@ -143,7 +141,7 @@ class SimpleOMRPHP
         $ismarked    = false;
 
         $imagick = $this->getImagick();
-        $pixels = $imagick->exportImagePixels($x,$y,$width,$height,"I", Imagick::PIXEL_CHAR);
+        $pixels = $imagick->exportImagePixels($x,$y,$width,$height,"I", \Imagick::PIXEL_CHAR);
         $counts = array_count_values($pixels);
         foreach($counts as $color => $qtd){
             if($color == 255)
@@ -171,7 +169,7 @@ class SimpleOMRPHP
      * @throws UnexpectedResolutionException
      */
     private function prepareImage($imagepath){
-        $imagick = new Imagick();
+        $imagick = new \Imagick();
         $map = $this->getMap();
         $imagick->readImage($imagepath.'[0]');
         $imagick->modulateImage(100, 0, 100);
@@ -179,7 +177,7 @@ class SimpleOMRPHP
         $imagick->thresholdImage(0.5);
         // Depreciado, mas não encontrei outra solução
 //        @$imagick->medianFilterImage(5);
-        $imagick->setImageCompression(imagick::COMPRESSION_JPEG);
+        $imagick->setImageCompression(\Imagick::COMPRESSION_JPEG);
         $imagick->setImageCompressionQuality(100);
         if($imagick->getImageWidth() != $map['expectedwidth'] || $imagick->getImageHeight() != $map['expectedheight']){
             throw new UnexpectedResolutionException('A resolução esperada não é igual a resolução final. expectedwidth = '.$map['expectedwidth'].' finalwidth = '.$imagick->getImageWidth().' expectedheight = '. $map['expectedheight'].' finalheight = '.$imagick->getImageHeight());
@@ -191,7 +189,7 @@ class SimpleOMRPHP
      *
      */
     private function prepareDraw(){
-        $draw = new ImagickDraw();
+        $draw = new \ImagickDraw();
 
         $draw->setStrokeOpacity(1);
         $draw->setFillOpacity(0);

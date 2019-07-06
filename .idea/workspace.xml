@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5df3067a-11c4-45e9-8483-6fcbc68784b8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/FileNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidTargetTypeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidToleranceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/JsonDecodeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/UnexpectedResolutionException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleOMR.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleOMR.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleOMRPHP.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleOMRPHP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SimpleOMRPHPTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SimpleOMRPHPTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleOMR.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleOMR.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleOMR.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -71,17 +62,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleOMRPHP.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleOMRPHP.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleOMRPHP.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="341">
+              <caret line="143" column="73" selection-start-line="143" selection-start-column="73" selection-end-line="143" selection-end-column="73" />
               <folding>
-                <element signature="e#39#51#0#PHP" expanded="true" />
+                <element signature="e#39#94#0#PHP" expanded="true" />
                 <element signature="n#generateResult#0;n#SimpleOMRPHP#0;n#!!top" />
                 <element signature="n#groupAnalytics#0;n#SimpleOMRPHP#0;n#!!top" />
-                <element signature="n#rectangleMark#0;n#SimpleOMRPHP#0;n#!!top" />
-                <element signature="n#prepareImage#0;n#SimpleOMRPHP#0;n#!!top" />
                 <element signature="n#drawRectangle#0;n#SimpleOMRPHP#0;n#!!top" />
                 <element signature="n#createFolder#0;n#SimpleOMRPHP#0;n#!!top" />
                 <element signature="n#getImagick#0;n#SimpleOMRPHP#0;n#!!top" />
@@ -147,6 +136,8 @@
     <findStrings>
       <find>FileNotFoundException</find>
       <find>JsonDecodeException</find>
+      <find>ImagickDraw</find>
+      <find>Imagick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,9 +159,9 @@
         <option value="$PROJECT_DIR$/src/Exceptions/UnexpectedResolutionException.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/SimpleOMRPHPTest.php" />
-        <option value="$PROJECT_DIR$/src/SimpleOMRPHP.php" />
         <option value="$PROJECT_DIR$/tests/SimpleOMRDriverTest.php" />
         <option value="$PROJECT_DIR$/src/SimpleOMR.php" />
+        <option value="$PROJECT_DIR$/src/SimpleOMRPHP.php" />
       </list>
     </option>
   </component>
@@ -337,12 +328,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562201710806</updated>
       <workItem from="1562201712044" duration="16420000" />
-      <workItem from="1562370103988" duration="4467000" />
+      <workItem from="1562370103988" duration="5223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20887000" />
+    <option name="totallyTimeSpent" value="21643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -409,11 +400,9 @@
         <state relative-caret-position="2925">
           <caret line="322" selection-start-line="322" selection-end-line="322" />
           <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
+            <element signature="e#39#94#0#PHP" expanded="true" />
             <element signature="n#generateResult#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#groupAnalytics#0;n#SimpleOMRPHP#0;n#!!top" />
-            <element signature="n#rectangleMark#0;n#SimpleOMRPHP#0;n#!!top" />
-            <element signature="n#prepareImage#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#drawRectangle#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#createFolder#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#getImagick#0;n#SimpleOMRPHP#0;n#!!top" />
@@ -524,6 +513,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/SimpleOMRDriverTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleOMR.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/SimpleOMRPHPTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -533,14 +536,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleOMRPHP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="341">
+          <caret line="143" column="73" selection-start-line="143" selection-start-column="73" selection-end-line="143" selection-end-column="73" />
           <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
+            <element signature="e#39#94#0#PHP" expanded="true" />
             <element signature="n#generateResult#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#groupAnalytics#0;n#SimpleOMRPHP#0;n#!!top" />
-            <element signature="n#rectangleMark#0;n#SimpleOMRPHP#0;n#!!top" />
-            <element signature="n#prepareImage#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#drawRectangle#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#createFolder#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#getImagick#0;n#SimpleOMRPHP#0;n#!!top" />
@@ -560,20 +561,6 @@
             <element signature="n#getDraw#0;n#SimpleOMRPHP#0;n#!!top" />
             <element signature="n#setDraw#0;n#SimpleOMRPHP#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/SimpleOMRDriverTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleOMR.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
