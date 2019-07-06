@@ -6,6 +6,9 @@ use SimpleOMRPHP;
 
 class SimpleOMR
 {
+    /** @var SimpleOMRPHP */
+    public $omr;
+
     protected $mapPath;
 
     protected $tolerance;
@@ -13,8 +16,6 @@ class SimpleOMR
     protected $debugFilePath;
 
     protected $debugFileName;
-
-    protected $omr;
 
     public function __construct($mapPath, $tolerance, $debugFilePath, $debugFileName)
     {
