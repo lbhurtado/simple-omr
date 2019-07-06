@@ -1,5 +1,15 @@
 <?php
 
+namespace LBHurtado\SimpleOMR;
+
+use Imagick;
+use ImagickDraw;
+use LBHurtado\SimpleOMR\Exceptions\JsonDecodeException;
+use LBHurtado\SimpleOMR\Exceptions\FileNotFoundException;
+use LBHurtado\SimpleOMR\Exceptions\InvalidToleranceException;
+use LBHurtado\SimpleOMR\Exceptions\InvalidTargetTypeException;
+use LBHurtado\SimpleOMR\Exceptions\UnexpectedResolutionException;
+
 /**
  *
  * @author Romário Rodrigues Ramos <romariox@gmail.com>
@@ -350,8 +360,8 @@ class SimpleOMRPHP
     }
 
 }
-class FileNotFoundException extends Exception{}
-class JsonDecodeException extends Exception{}
-class InvalidToleranceException extends Exception{}
-class InvalidTargetTypeException extends Exception{}
-class UnexpectedResolutionException extends Exception{}
+//class FileNotFoundException extends Exception{}
+//class JsonDecodeException extends Exception{}
+//class InvalidToleranceException extends Exception{}
+//class InvalidTargetTypeException extends Exception{}
+//class UnexpectedResolutionException extends Exception{}

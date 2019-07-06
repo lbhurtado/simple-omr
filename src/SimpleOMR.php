@@ -2,8 +2,6 @@
 
 namespace LBHurtado\SimpleOMR;
 
-use SimpleOMRPHP;
-
 class SimpleOMR
 {
     /** @var SimpleOMRPHP */

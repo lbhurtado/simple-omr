@@ -26,10 +26,7 @@
     "autoload": {
         "psr-4": {
             "LBHurtado\\SimpleOMR\\": "src"
-        },
-        "classmap": [
-            "src/SimpleOMRPHP.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {

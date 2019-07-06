@@ -2,7 +2,7 @@
 
 namespace LBHurtado\SimpleOMR\Tests;
 
-use SimpleOMRPHP;
+use LBHurtado\SimpleOMR\SimpleOMRPHP;
 
 class SimpleOMRPHPTest extends TestCase
 {
