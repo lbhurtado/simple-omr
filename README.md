@@ -1,4 +1,4 @@
-# Very short description of the package
+# Simple OMR Driver for lbhurtado/ballot-omr
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lbhurtado/simpleomr.svg?style=flat-square)](https://packagist.org/packages/lbhurtado/simpleomr)
 [![Build Status](https://img.shields.io/travis/lbhurtado/simpleomr/master.svg?style=flat-square)](https://travis-ci.org/lbhurtado/simpleomr)
@@ -12,7 +12,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require lbhurtado/simpleomr
+composer require lbhurtado/simple-omr
 ```
 
 ## Usage
